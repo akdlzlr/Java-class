@@ -1,0 +1,47 @@
+.error{
+	color : red;
+	font-weight : bolder;
+}
+
+.avata-sm{
+	width:25px;
+	height:25px;	
+}
+
+.avata-md{
+	width:50px;
+	height:50px;	
+}
+
+.avata-lg{
+	width:75px;
+	height:75px;	
+}
+
+.bg-base {
+  /* Half height */
+  height: auto;
+  max-width: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg_resort{
+	/* The image used */
+  background-image:  url("../image/room3.jpg");
+	
+}
+
+.bg_food{
+	/* The image used */
+  background-image:  url("../image/bg-food.jpg");
+	
+}
+.bg_tour{
+	/* The image used */
+  background-image:  url("../image/4.jpg");
+	
+}

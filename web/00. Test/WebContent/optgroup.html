@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	crossorigin="anonymous">
+</head>
+<body>
+	<form>
+		<select>
+			<optgroup label="HTML5">
+				<option>MultimediaTag</option>
+				<option>Connectivity</option>
+				<option>Device</option>
+			</optgroup>
+			<optgroup label="css3">
+				<option>Animation</option>
+				<option>3D Transform</option>
+			</optgroup>
+		</select>
+		<button type="submit">
+			<i class="fas fa-check"></i>확인
+		</button>
+		<button type="reset">
+			<i class="fas fa-undo"></i>취소
+		</button>
+
+		<filedset> <legend>입력양식</legend>
+			<table>
+				<tr>
+					<td><label for="name">이름</label></td>
+					<td><input id="text" name="name" /></td>
+				</tr>
+				<tr>
+					<td><label for="mail">이메일</label></td>
+					<td><input id="mail" type="email" /></td>
+				</tr>
+			</table>
+			<input type="submit"/>
+			<br>
+		</filedset>
+		<textarea rows="5" cols="80">디폴트</textarea>
+		<br><br>
+		<input type="date"/>
+		<br><br>
+	</form>
+</body>
+</html>

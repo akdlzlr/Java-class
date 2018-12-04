@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+header {
+	width: 100%;
+	height: 150px;
+	background-image: url('../images/Lighthouse.jpg');
+	background-size: 100% 250px;
+}
+
+h1 {
+	font-size: 3em
+}
+
+header>p {
+	color: white;
+}
+
+nav li:hover, nav li>a:hover, nav li.search-menu:hover {
+	color: black;
+	background: white;
+	text-decoration:none;
+}
+
+nav li {
+	list-style: none;
+	float: left;
+	padding: 15px;
+}
+nav li.search-menu{
+	list-style: none;
+	float: right;
+	padding: 15px;
+	color: white;
+}
+
+nav li>a {
+	color: white;
+	padding: 15px;
+}
+div.main{
+	
+	margin: 0px 100px 0px 100px;
+}
+
+a{
+	text-decoration:none;
+	color: blue;
+}
+a:hover{
+	text-decoration:underline;
+}
+.circle-btn{
+	display: block;
+	width:30px;
+	height:30px;
+	border: 1px solid gray;
+	border-radius:50%;
+	box-shadow: 2px 2px 2px #A9A9A9;
+}
+.circle-btn{
+	text-align: center;
+	display: block;
+	line-height:30px;
+}
+.to-top{
+	position:fixed;
+	bottom: 10px; right:10px;
+}

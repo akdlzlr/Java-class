@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script> 
+$(function() {
+	$('#btn1').click(function() { $('img').hide('slow'); });
+	$('#btn2').click(function() { $('img').show('slow'); });
+	$('#btn3').click(function() { $('img').slideUp('slow'); });
+	$('#btn4').click(function() { $('img').slideDown('slow'); });
+	$('#btn5').click(function() { $('img').fadeOut('slow'); });
+	$('#btn6').click(function() { $('img').fadeIn('slow'); });
+	$('#btn7').click(function() { $('img').fadeTo('slow', 0.5); });
+	$('#btn8').click(function() { $('img').fadeTo('slow', 1); });
+	$('#btn9').click(function() {
+					/*$('img').hide('slow');
+					$('img').attr('src','../images/Chrysanthemum.jpg');
+					$('img').show('slow');
+					비동기 함수를 나타냄, 한꺼번에 바뀜 <=> 동기함수 차례차례하는 것
+					콜백을 사용해야함*/
+					$('img').hide('slow',function(){
+						console.log(this);
+						$(this).attr('src','../images/Chrysanthemum.jpg');
+						$(this).show('slow');
+					});
+					
+			});
+}); 
+</script>
+</head>
+<body>
+	<button type="button" id="btn1">hide</button>
+	<button type="button" id="btn2">show</button>
+	<button type="button" id="btn3">slide up</button>
+	<button type="button" id="btn4">slide down</button>
+	<button type="button" id="btn5">fade out</button>
+	<button type="button" id="btn6">fade in</button>
+	<button type="button" id="btn7">fade To(0.5)</button>
+	<button type="button" id="btn8">fade To(1)</button>
+	<button type="button" id="btn9">Hide And Show</button>
+	<p><img width="300" src="../images/Tulips.jpg"></p>
+</body>
+</html>

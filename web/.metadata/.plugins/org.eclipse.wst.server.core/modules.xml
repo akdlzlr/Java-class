@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:scorpio2" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:JQuery_test" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:CSS_Test2" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:scorpio3" serverId="HTTP Preview at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:scorpio" serverId="HTTP Preview at localhost"/>
+</modules>

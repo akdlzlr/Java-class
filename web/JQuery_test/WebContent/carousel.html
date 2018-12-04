@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="css/carousel.css"/>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/carousel.js"></script>
+<script>
+$(function() {
+	var images = [
+		'Chrysanthemum.jpg',   
+		'Desert.jpg',
+		'Hydrangeas.jpg',
+		'Jellyfish.jpg',
+		'Koala.jpg',     
+		'Lighthouse.jpg',      
+		'Penguins.jpg',
+		'Tulips.jpg'
+	];	
+	// carousel($('#carousel'),images);
+	$('#carousel').carousel(images);
+});
+</script>
+</head>
+<body>
+	<div id="carousel"></div>
+</body>
+</html>
+
+
+
+

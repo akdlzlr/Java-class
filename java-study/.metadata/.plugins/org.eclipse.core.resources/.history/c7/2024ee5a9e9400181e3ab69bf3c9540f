@@ -1,0 +1,14 @@
+package edu.iot.leo.interfaceWeapon3;
+
+public class Gun implements Weapon {
+
+	public int power() {
+		int power = 30;
+		return power;
+	}
+	
+	@Override
+	public void attack() {
+		System.out.println("户具户具!! 帕帕帕帕!!");
+	}
+}

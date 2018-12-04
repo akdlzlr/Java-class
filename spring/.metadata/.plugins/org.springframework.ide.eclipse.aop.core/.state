@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="hi"/>
+<aop-project name="TilesTest"/>
+<aop-project name="MybatisTest"/>
+<aop-project name="HelloWorld"/>
+<aop-project name="SpringCommon"/>
+<aop-project name="DI_Test"/>
+<aop-project name="di_test02"/>
+<aop-project name="MyMvcTemplate"/>
+<aop-project name="controllertest1"/>
+<aop-project name="Aquarius">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="33" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#Aquarius#src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml#33" aspect-start-line-number="33" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/Aquarius/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:Aquarius|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:boardServiceImpl:10" bean-file="/Aquarius/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Aquarius/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=MybatisTest/C:\/Users\/student\/.m2\/repository\/org\/springframework\/spring-tx\/4.1.7.RELEASE\/spring-tx-4.1.7.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{BoardServiceImpl.java[BoardServiceImpl~delete~QBoard;" target-start-line="98"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:Aquarius|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:boardServiceImpl:10" bean-file="/Aquarius/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/Aquarius/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=MybatisTest/C:\/Users\/student\/.m2\/repository\/org\/springframework\/spring-tx\/4.1.7.RELEASE\/spring-tx-4.1.7.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{BoardServiceImpl.java[BoardServiceImpl~create~QBoard;" target-start-line="42"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="TeamTest"/>
+</aop-reference-model>

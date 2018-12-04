@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	crossorigin="anonymous">
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/pagination.js"></script>
+<script>
+	$(function() {
+
+		var value = 0;
+		var tId = setInterval(function() {
+			value += 5;
+			$('.progress-bar').css('width', `${value}%`).text(`${value}%`);
+			if (value == 100) {
+				clearInterval(tId);
+			}
+		}, 100);
+
+		$('.pagination').pagination({
+			total : 10,
+			active : 2,
+			callback : console.log
+		});
+	});
+</script>
+<style>
+.jumbotron {
+	background-image: url('images/Lighthouse.jpg');
+	background-size: 100% 250px;
+}
+</style>
+</head>
+<body>
+	<div class="container-fluid" style="margin-top: 80px">
+		<div class="jumbotron text-white py-4 mb-0">
+			<h1>Scorpio</h1>
+			<p>쉼표가 있는 삶, 즐거운 여행을 위하여...</p>
+		</div>
+
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+
+			<!-- Brand -->
+			<a class="navbar-brand" href="#"><img src="images/bird.jpg"
+				alt="Logo" style="width: 40px;"></a>
+
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<nav class="navbar navbar-expand-sm bg-dark ">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+						</ul>
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link" href="#">Link 4</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link 5</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link 6</a></li>
+						</ul>
+					</nav>
+				</ul>
+			</div>
+		</nav>
+
+
+
+		<div class="alert alert-success alert-dismissible fade show">
+			<button type="button" class="close btn btn-outline-primary"
+				data-dismiss="alert">&times;</button>
+			<strong>Success!</strong> You should <a href="#" class="alert-link">read
+				this message</a>
+		</div>
+
+		<div class="row mt-4">
+			<div class="col-md-2">
+				<button type="button" class="btn btn-danger btn-block">사이드1
+				</button>
+				<button type="button" class="btn btn-info btn-block">사이드2</button>
+				<button type="button" class="btn btn-primary btn-block">사이드3
+				</button>
+			</div>
+			<div class="col-md-10">
+				<div class="progress mb-3">
+					<div class="progress-bar" style="width: 0%">100%</div>
+				</div>
+				<p class="text-center">
+					<img src="http://placehold.it/500x300" />
+				</p>
+				<ul class="pagination"></ul>
+			</div>
+		</div>
+	</div>
+</body>
+</body>
+</html>

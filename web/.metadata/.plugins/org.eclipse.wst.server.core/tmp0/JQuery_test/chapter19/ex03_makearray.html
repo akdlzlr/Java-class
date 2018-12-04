@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script> 
+$(function() {
+	var jQ=$('p');		//	생성자 함수? 이때 만들어지는것은 유사배열이다.
+			// jQ.reverse(); 배열의 메서드는 실행 되지 않는다. jQ는 가능
+	var ar=$.makeArray(jQ);//	static 매서드?
+			// jQ 메서드는 실행 되지 않는다. 배열은 가능
+	ar.reverse();
+	for(i=0;i<ar.length;i++){
+		document.write(ar[i].firstChild.nodeValue+"<br />");
+	}
+	
+}); 
+</script>
+</head>
+<body>
+	<p>문단1</p>
+	<p>문단2</p>
+	<p>문단3</p>
+	<hr />
+</body>
+</html>

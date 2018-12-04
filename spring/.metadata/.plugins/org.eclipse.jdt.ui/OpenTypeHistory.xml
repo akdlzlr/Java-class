@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=DI_Test/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;com.sun.xml.internal.bind.v2.model.core(ArrayInfo.class[ArrayInfo" modifiers="1537" timestamp="1531701914083"/>
+<typeInfo handle="=DI_Test/src\/main\/java&lt;dao{ArticleDao.java[ArticleDao" modifiers="513" timestamp="1538359849501"/>
+<typeInfo handle="=controllertest1/src\/main\/java&lt;edu.iot.controller_test.service{AccountService.java[AccountService" modifiers="513" timestamp="1538446121889"/>
+<typeInfo handle="=TilesTest/src\/main\/java&lt;edu.iot.tiles_test.service{BoardService.java[BoardService" modifiers="513" timestamp="1538636976500"/>
+<typeInfo handle="=MybatisTest/src\/main\/java&lt;edu.iot.mybatis_test.dao{MemberDao.java[MemberDao" modifiers="513" timestamp="1538987757586"/>
+<typeInfo handle="=MybatisTest/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.lang.reflect(Member.class[Member" modifiers="1537" timestamp="1531701914083"/>
+<typeInfo handle="=controllertest1/C:\/Program Files\/Java\/jre1.8.0_171\/lib\/rt.jar&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1531701914083"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{GalleryService.java[GalleryService" modifiers="513" timestamp="1539326333281"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{RestaurantService.java[RestaurantService" modifiers="513" timestamp="1540185605451"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{TourService.java[TourService" modifiers="513" timestamp="1540187305437"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.dao{CrudDao.java[CrudDao" modifiers="513" timestamp="1539326387881"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{PlanService.java[PlanService" modifiers="513" timestamp="1540185075217"/>
+<typeInfo handle="=SpringCommon/src\/main\/java&lt;edu.iot.common.service{ReplyService.java[ReplyService" modifiers="513" timestamp="1540426136442"/>
+<typeInfo handle="=SpringCommon/src\/test\/java&lt;{BaseDaoTest.java[BaseDaoTest" modifiers="1" timestamp="1540514772224"/>
+<typeInfo handle="=SpringCommon/src\/test\/java&lt;{BaseTest.java[BaseTest" modifiers="1" timestamp="1540514231820"/>
+</typeInfoHistroy>

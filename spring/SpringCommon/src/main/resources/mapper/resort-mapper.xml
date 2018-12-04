@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.iot.common.dao.ResortDao">
+	<!-- where절에 부등호가 없으면 <![CDATA[]>는 생략해도 된다. -->
+	<select id="count" resultType="int">
+	<![CDATA[
+		SELECT count(*)
+		FROM resort
+	]]></select>
+
+
+	<select id="getPage" parameterType="map" resultType="Resort"><![CDATA[
+		SELECT resort_id, region, type, name, room
+		FROM(	
+			select row_number() over (order by resort_id) as seq,
+				 resort_id, region, type, name, room
+			from resort
+		)
+		where seq between #{start} and #{end}
+		order by resort_id
+	]]></select>
+
+	<insert id="insert" parameterType="Resort">
+	<![CDATA[
+		insert into resort
+			(resort_id, region, type, name, address, room, phone_number)
+		values(resort_SEQ.NEXTVAL, #{region}, #{type},#{name},#{address}, #{room}, #{phoneNumber})
+	]]>
+	</insert>
+
+	<update id="increaseReadCnt" parameterType="long"><![CDATA[
+		update board set
+			read_cnt = read_cnt+1
+		where board_id=#{boardId}
+	]]></update>
+
+	<select id="findById" parameterType="long" resultType="Resort"><![CDATA[
+		select * from resort
+		where resort_id=#{resortId}
+	]]></select>
+
+	<update id="update" parameterType="Resort">
+		UPDATE board SET
+		title=#{title},
+		content=#{content},
+		update_date=sysdate
+		WHERE
+		board_id=#{boardId} and password=#{password}
+	</update>
+
+	<delete id="delete" parameterType="long">
+		DELETE FROM board
+		WHERE
+		board_id=#{boardId}
+	</delete>
+
+	<select id="search" parameterType="Search" resultType="Resort"><![CDATA[
+		select * from resort
+		where  type='${category}'
+	]]></select>
+
+	<select id="random" parameterType="int" resultType="Resort">
+			<![CDATA[ 
+				SELECT * FROM(
+    			SELECT * FROM resort
+   				ORDER BY DBMS_RANDOM.RANDOM
+				) WHERE ROWNUM<=#{i}
+			 ]]>
+	</select>
+
+</mapper>
+

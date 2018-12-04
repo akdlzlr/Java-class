@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+<script src = "bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src = "js/common.js"></script>
+<script src = "js/famoussaying.js"></script>
+
+<style>
+.pagination {
+	text-align:center;
+}
+.pagination>a{
+	text-decoration:none;
+	padding : 10px;
+}
+.pagination>a:hover{
+	color : red;
+}
+.pagination>b{
+	display : inline-block;
+	color : white;
+	width : 1.25em;
+	height: 1.25em;
+	background : navy;
+	border-radius : 50%;
+}
+
+</style>
+
+<script> 
+$(function(){
+	//	출력 구조
+	function createQuote(fs){
+		return `
+		<div class="col-sm-6 col-md-4">
+			<blockquote class="blockquote bg-secondary text-warning">${fs.statement}
+				<footer class="blockquote-footer text-md-center bg-warning text-muted">${fs.who}
+					<button data-id="${fs.id}" type="button" class="delete">x</button>
+				</footer>
+			</blockquote>
+		</div>`;
+	}
+	
+	//	페이지 단위 출력
+	function loadPage(page){
+		//	기존 내용 비우기
+		$('#content>.row').empty();
+		
+		//	내용 교체
+		var list = fsList.getPage(page);
+		list.map(createQuote)
+			.forEach(item=>$('#content>.row').append(item));
+
+		setPages();
+	}
+	
+	//	페이지 설정
+	function setPages(){
+		$('.pagination').empty();
+		for(var i =1;i<=fsList.totalPage;i++){
+			if(i==page){
+			$('.pagination').append(`<b>${i}</b>`);
+			}else{
+				$('.pagination').append(`<a href="${i})">${i}</a>`);
+			}
+		}
+	}
+	
+	var page=1;	
+	var fsList = new FSList();
+	
+	loadPage(page);
+	$('.pagination').on('click','a',function(e){
+			e.preventDefault();
+			//	페이지번호 추출
+			page = parseInt($(this).attr('href'));
+			
+			loadPage(page);
+	});
+	$('#content').on('click','.delete',function(e){
+		var id = $(this).data("id");	//	이때 넘어오는 id는 문자열임
+		fsList.remove(id);
+		loadPage(page);	
+	});
+/*	
+ 	한줄 짜리 문자열
+	var fs = parse(str);
+	var saying = createQuote(fs);
+	//$('#content').append(saying);
+	$(saying).appendTo('#content');	*/
+	
+	
+});
+
+</script>
+</head>
+<body>
+	<h1>명언 </h1>
+	<div id="content">
+		<div class="row"></div>
+	</div>	
+	<div class="pagination"></div>
+</body>
+</html>

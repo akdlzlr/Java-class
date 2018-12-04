@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="scorpio3" name="scorpio3" path="C:/iot-workspace/web/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/scorpio3" type="static"/>
+  <module context="scorpio" name="scorpio" path="C:/iot-workspace/web/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/scorpio" type="static"/>
+</server>

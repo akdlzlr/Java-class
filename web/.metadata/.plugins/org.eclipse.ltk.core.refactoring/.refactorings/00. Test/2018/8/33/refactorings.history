@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;00. Test/WebContent/div_teg.html&apos; to &apos;div_tag.html&apos;" description="Rename resource &apos;div_teg.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/div_teg.html" name="div_tag.html" stamp="1534483849862" updateReferences="true"/>
+</session>

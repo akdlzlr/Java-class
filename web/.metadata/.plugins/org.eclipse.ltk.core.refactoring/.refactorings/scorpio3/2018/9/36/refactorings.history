@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move &apos;spot-view.html&apos; to &apos;WebContent&apos;" description="Move &apos;spot-view.html&apos; to &apos;WebContent&apos;" destination="WebContent" element1="WebContent/js/spot-view.html" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1535947993058" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;gmaps&apos; to &apos;bower_components&apos;" description="Move &apos;gmaps&apos; to &apos;bower_components&apos;" destination="WebContent/bower_components" element1="bower_components/gmaps" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1535954670536" updateReferences="true"/>
+</session>

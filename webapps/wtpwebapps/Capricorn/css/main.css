@@ -1,0 +1,8 @@
+.jumbotron {
+	background-image: url('../images/bg.jpg');
+	background-size: 100% 200px;
+}
+
+.error {
+	color: red;
+}

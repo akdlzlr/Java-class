@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Saying.java&apos; to &apos;part3/src/main/java/edu.iot.part3.Test01&apos;&#x0D;&#x0A;- Original project: &apos;Virgo&apos;&#x0D;&#x0A;- Destination element: &apos;part3/src/main/java/edu.iot.part3.Test01&apos;&#x0D;&#x0A;- Original element: &apos;edu.iot.virgo.model.Saying.java&apos;" description="Copy compilation unit" destination="=part3/src\/main\/java&lt;edu.iot.part3.Test01" element1="/src&lt;edu.iot.virgo.model{Saying.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1533868710299" units="1" version="1.0"/>
+</session>

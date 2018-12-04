@@ -1,0 +1,16 @@
+var ar = [0,1,2,3];
+
+console.log(ar);
+
+ar.unshift(100,200);
+
+console.log(ar);
+
+ar.unshift(300);
+
+console.log(ar);
+
+var num=ar.shift();
+
+console.log(ar);
+console.log(num);

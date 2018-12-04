@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script>
+	function changeCaption(cap){
+		document.getElementById("fruit").innerText=cap;
+	}
+	// java에서 했던 button 예제와 같음
+	// java에선 ???.
+	// script에선 이벤트 핸들러라고 한다.
+</script>
+</head>
+<body>
+	<h1 id="fruit">과일</h1>
+	<form>
+		<input type="button" value="Apple"
+			onClick="changeCaption('Apple')">
+		<input type="button" value="Orange"
+			onClick="changeCaption('Orange')">
+	</form>
+	<!-- html에서 속성은 ""을 쓰고 javascript는 html과 겹치지 않기 위해 ''을 쓴다. -->
+</body>
+</html>

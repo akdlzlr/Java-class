@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	crossorigin="anonymous">
+<style>
+	.box {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+	}
+
+	.box:nth-child(1) {
+		background-color: red;
+		left: 10px;
+		top: 10px;
+		z-index: 1;
+	}
+
+	.box:nth-child(2) {
+		background-color: green;
+		left: 60px;
+		top: 60px;
+		z-index: 2;
+	}	
+
+	.box:nth-child(3) {
+		background-color: blue;
+		left: 110px;
+		top: 110px;
+		z-index: 3;
+	}
+
+	.p-parent {
+		position: relative;
+		border: 0.1px solid black;
+		margin: 10px;
+		padding: 30px;
+	}
+
+	.parent {
+		position: relative;
+		border: 0.1px solid black;
+		margin: 10px;
+		padding: 30px;
+		overflow: auto;
+	}
+
+	.box2 {
+		width: 100px;
+		height: 100px;
+		background-color: orange;
+		position: fixed;
+		bottom: 50%;
+		left: 50%;
+		z-index: 40;
+	}
+</style>
+</head>
+<body style="height: 1000px">
+	<h1>position 속성</h1>
+	<div class="p-parent">
+		<div class="parent">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</div>
+	<div class="box2"></div>
+</body>
+</html>

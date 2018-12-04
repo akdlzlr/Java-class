@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	<h1 id="para" style="color:red;">나는 바보다.</h1>
+	<script>
+	
+		console.log(document.getElementById("para").style.color);
+		
+		document.getElementById("para").innerText="나는 천재다.";
+		document.getElementById("para").style.color="blue";
+		// 자바스크립트 언어는 대소문자를 구분한다.
+		console.log("para의 색상");
+		console.log(document.getElementById("para").style.color);
+	</script>
+</body>
+</html>

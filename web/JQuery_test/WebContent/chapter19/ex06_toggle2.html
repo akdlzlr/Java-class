@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script> 
+$(function() {
+	$('#btn1').click(function() {
+		$('h1').toggle({
+			duration:5000,
+			complete:function(){
+				alert("끝");
+			}
+		});
+	});
+}); 
+</script>
+</head>
+<body>
+	<button type="button" id="btn1">hide/show</button>
+	<h1>애니메이션 대상</h1>
+	<hr />
+</body>
+</html>

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+nav>ul{
+	margin-top :1px;
+	margin-bottom : 0;
+	overflow: hidden;
+	background: navy;
+}
+
+table thead>tr{
+	background: gray;
+	color: white;
+}
+table{width:100%;}
+table tbody>tr:nth-child(2n+1){background-color: white;}
+table tbody>tr:nth-child(2n){background-color: lightgray;}
